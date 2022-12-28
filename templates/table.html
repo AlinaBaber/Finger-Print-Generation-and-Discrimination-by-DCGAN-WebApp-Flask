@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphatron Technologies Products</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='css/style.css')}}">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#home" class="logo"> <img src="{{ url_for( 'static', filename='images/ALPHATRON LOGO 11.png')}}" alt="" style="width:100%;100%;" > </a>
+
+
+</header>
+
+
+<!-- navbar section  -->
+
+<!-- header section ends -->
+
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="content" style="width:1000px;1000px;">
+            <div class="heading">
+        <h1> Matching Results</h1>
+        <p>Here you can see the Generated Image as well as the similarity Score with Real and Fake Finger Prints</p>
+    </div>
+    <h2>Input Image</h2>
+    <img src="{{url_for('static', filename='uploads/real_image.png')}}" alt="Real Image">
+    <h2>Generated Fake Image</h2>
+    <img src="{{url_for('static', filename='uploads/fake_image.png')}}" alt="Fake Image">
+    <h2>Error</h2>
+    <p>{{errorrate}}%</p>
+    <h2>Real Similarity %</h2>
+    <p>{{realoutput}} %</p>
+    <h2>Fake Similarity %</h2>
+    <p>{{fakeoutput}} %</p>
+    <n/>
+    <h1> Model Performance</h1>
+    <img src="{{url_for('static', filename='uploads/modelperformence.jpeg')}}" alt="Model Performance">
+    </div>
+
+</section>
+
+<!-- footer section starts  -->
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-phone"></i> +923314989588 </p>
+            <p> <i class="fas fa-phone"></i> +923314989588 </p>
+            <p> <i class="fas fa-envelope"></i> alinababer46@gmail.com </p>
+            <p> <i class="fas fa-map"></i> NED University, BIC, Bahria Univeristy </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit"> created by <span>Alphatron Technologies Private Limited</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link      -->
+<script src="{{ url_for( 'static', filename='js/script.js') }}"></script>
+
+<script>
+    lightGallery(document.querySelector('.gallery .lightbox'));
+</script>
+
+</body>
+</html>

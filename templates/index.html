@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphatron Technologies Products</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='css/style.css')}}">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#home" class="logo"> <img src="{{ url_for( 'static', filename='images/ALPHATRON LOGO 11.png')}}" alt="" style="width:100%;100%;" > </a>
+
+
+</header>
+
+<!-- navbar section  -->
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+<section class="home" id="home">
+
+    <div class="slide active">
+        <div class="content">
+            <h3>Finger Print Authentication and Fake sample Generation</h3>
+                <span>Choose Fingerprint Image</span>
+             <div class="box">
+                <form method="POST" enctype="multipart/form-data">
+                    <div style="margin: 15px 0;">
+                        <input class="btn" type="file" name="file" accept="image/*">
+                    </div>
+                    <button class="btn">Submit</button>
+                </form>
+                 </div>
+            <a href="#" class="btn">read more</a>
+        </div>
+        <div class="image">
+            <img src="{{ url_for( 'static', filename='images/extract-fingerprint-characteristics.jpg')}}" alt="">
+        </div>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- category section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="content">
+        <span>Finger Print Authentication and Fake Sample Generation</span>
+        <h3>Description</h3>
+        <p>Since real biometric fingerprint samples fall under the category of personal data, their use in deep learning model training may be limited. Artificially generated fingerprint images are anonymous and can be used without restriction ("privacy-friendly"). Biological (papillary lines structure and change), forensic (computer fingerprint detection, reconstruction, and restoration of damaged samples), and technology studies are all interested in synthesised fingerprint samples (various methods of biometric security). It may be challenging to create fake fingerprints that perfectly imitate the textural qualities of real fingerprints. In this paper, we present the Adaptive Deep Convolutional Generative Adversarial Network (ADCGAN), a deep learning framework that we designed and investigated, and which has showed the potential to generate realistic fingerprint samples that are both realistic and accurate.</p>
+    </div>
+
+</section>
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-phone"></i> +923314989588 </p>
+            <p> <i class="fas fa-phone"></i> +923314989588 </p>
+            <p> <i class="fas fa-envelope"></i> alinababer46@gmail.com </p>
+            <p> <i class="fas fa-map"></i> NED University, BIC, Bahria Univeristy </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit"> created by <span>Alphatron Technologies Private Limited</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link      -->
+<script src="{{ url_for( 'static', filename='js/script.js') }}"></script>
+
+<script>
+    lightGallery(document.querySelector('.gallery .lightbox'));
+</script>
+
+</body>
+</html>
