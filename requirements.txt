@@ -7,4 +7,4 @@ sklearn
 scikit-learn
 tqdm
 Pillow~=9.0.1
-Werkzeug~=2.0.3
+Werkzeug~=3.0.3
